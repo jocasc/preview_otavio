@@ -1,0 +1,127 @@
+a {
+    color: var(--black-color);
+}
+
+a:link {
+    text-decoration: none;    
+}
+
+.titulo {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;       
+    margin-bottom: 30px;
+    margin-left: 240px;
+}
+
+i {
+    color: var(--yellow-color);
+}
+
+.hashtags {
+    font-family: var(--font-title-anisette);
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 100px;
+    font-size: 1.5rem;
+    align-self: flex-start;  
+    padding-left: 240px;
+    width: 700px;
+    line-height: 1.75;
+}
+
+.hashtags p {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+
+
+.azul {
+    /* background-color: blue; */
+    height: 25vh;
+    width: 100vw;
+    font-size: 50px;
+    /* color: white;    */
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 130px;
+    text-transform: uppercase;
+    /* letter-spacing: px; */
+    animation: move-rtl 6000ms linear infinite;
+  }
+
+  @keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+  }  
+
+section h1 {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 80px;    
+    margin-bottom: 80px;
+}
+
+
+
+article {
+    display: flex;       
+    /* flex-direction: row; */
+    gap: 17px; 
+    justify-content: center;    
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+
+
+.card-textos {
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 31px;
+    border: 0.3ch solid var(--black-color);    
+    border-radius: 10px;    
+    width: 28vw;    
+    height: 42vh;
+    line-height: 1.95;    
+}
+
+.card-textos p:nth-child(1) {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    /* background-color: green; */
+    line-height: 1;
+}
+
+.card-textos p:nth-child(2) {
+    line-height: 1;
+    /* background-color: brown; */
+    padding-top: 0;
+    margin-top: 0;
+    font-family: var(--font-title-anisette);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.card-textos p:nth-child(3) {
+    padding-top: 15px;
+    font-family: var(--font-text-adelle);
+    font-weight: 300;
+    font-style: normal;    
+}

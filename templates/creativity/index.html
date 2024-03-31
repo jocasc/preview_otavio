@@ -1,0 +1,149 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/article.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/sidenav.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/recent-texts.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/container.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/dropdown-button.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">        
+    <title>Versão 3.0</title>
+</head>
+<body>
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static 'assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <a href="{% url 'sobre' %}">SOBRE</a>
+                        <a href="#">EQUIPA</a>
+                        <a href="#">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="textos_publicacoes.html">PUBLICAÇÕES</a>
+                                <a href="textos_notas_etnograficas.html">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        <a href="#">AGENDA</a>
+                        <a href="#" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>
+        <img src="{% static 'assets/img/Logo_Horizontal_PretoFosco.png' %}" id="main-image" class="header__navbar__principal-image" alt="trademark">
+        <section>
+            <article class="article" id="myarticle">                
+                <p>Project statement ocaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent ex exeriorrorum re cuptat laciis acerferum de sant voluptas et ma cuptat laciis acerferum rectem con posam volorru ptassi con elignatesent asperorrum autaquas rectem con posam.Project statement ocaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent ex exeriorrorum re cuptat laciis acerferum de sant voluptas et ma cuptat laciis acerferum rectem con posam volorru ptassi con elignatesent asperorrum autaquas rectem con posam.Project statement ocaepremquas maios  autaquas rectem con posam volorru ptassi con elignatesent.
+                    <br><br>
+                    Ex exeriorrorum re cuptat laciis acerferum de sant voluptas et ma cuptat laciis acerferum rectem con posam volorru ptassi con elignatesent asperorrum autaquas rectem con recten ma cuptat laciis acerferum rectem ma con elignatesent asperorrum autaquas rectem con.
+                </p>                
+                <span>+ LER MAIS</span>
+            </article>
+        </section>
+
+
+        <div class="azul" id="moving">
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1>
+            <h1>DESTAQUES</h1> 
+            <h1>DESTAQUES</h1>     
+        </div>
+
+        <div class="container">
+            <div class="carrossel" style="max-width:500px;height: 500px;">
+                <img class="mySlides w3-animate-left" src="{% static 'assets/img/mario.png' %}" style="width:100%;margin-top:auto;margin-bottom:auto;">
+                <img class="mySlides w3-animate-left" src="{% static 'assets/img/Texto.png' %}" style="width:100%;margin-top:auto;margin-bottom:auto;">
+                <img class="mySlides w3-animate-left" src="{% static 'assets/img/Imagem.png' %}" style="width:100%;margin-top:auto;margin-bottom:auto;">
+                <img class="mySlides w3-animate-left" src="{% static 'assets/img/Texto-2.png' %}" style="width:100%;margin-top:auto;margin-bottom:auto;">
+                <img class="mySlides w3-animate-left" src="{% static 'assets/img/video.png' %}" style="width:100%;margin-top:auto;margin-bottom:auto;">
+            </div>
+            <div class="container-buttons">
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+                <div class="circle-button"></div>
+            </div>
+        </div>  
+        <!-- <hr>  -->
+
+
+        <section class="recent">
+            <h2>TEXTOS RECENTES!</h2>
+            <div class="recent-texts">
+                <div class="recent-texts-container">
+                    <div>
+                        <p class="recent-texts__title">TÍTULO</p>
+                        <p class="recent-texts__author">Autoria</p>                        
+                    </div>
+                    <p class="recent-texts__content">Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae 
+                        ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con 
+                        consequo eatis ipidunt faciende molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende 
+                        molorissi aut ratem doluptaspe venita con consequo eatis [...]</p>
+                    <button class="recent-texts__more">+ LER MAIS</button>
+                </div>
+                <hr class="recent-texts__line">
+                <div class="recent-texts-container">
+                    <div>
+                        <p class="recent-texts__title">TÍTULO</p>
+                        <p class="recent-texts__author">Autoria</p>                        
+                    </div>
+                    <p class="recent-texts__content">Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae 
+                        ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con 
+                        consequo eatis ipidunt faciende molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende 
+                        molorissi aut ratem doluptaspe venita con consequo eatis [...]</p>
+                    <button class="recent-texts__more">+ LER MAIS</button>
+                </div>                
+            </div>            
+        </section>            
+
+    </main>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div>
+            Logos Redes Sociais.
+        </div>        
+        <div>
+            <input type="text" placeholder="pesquisar...">    
+            <ul>
+                <li>SOBRE</li>
+                <li>VISUAL</li>
+                <li>TEXTOS</li>
+                <li>AGENDA</li>
+                <li>FAZ PARTE!</li>
+          </ul>
+        </div>        
+    </footer>
+    
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="{% static 'assets/js/header.js' %}"></script>
+<!--    <script src="blog/js/burger.js"></script>-->
+</body>
+</html>
