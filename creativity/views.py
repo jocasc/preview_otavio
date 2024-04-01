@@ -20,3 +20,7 @@ def visual(request):
 
 def publicacoes(request):
     return render(request, 'creativity/textos_publicacoes.html')
+
+
+def etnograficas(request):
+    return render(request, 'creativity/textos_notas_etnograficas.html')
