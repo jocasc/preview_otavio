@@ -24,3 +24,7 @@ def publicacoes(request):
 
 def etnograficas(request):
     return render(request, 'creativity/textos_notas_etnograficas.html')
+
+
+def textosdetalhados(request):
+    return render(request, 'creativity/textos_detalhes.html')
