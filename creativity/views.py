@@ -12,3 +12,7 @@ def sobre(request):
 
 def equipa(request):
     return render(request, 'creativity/equipa.html')
+
+
+def visual(request):
+    return render(request, 'creativity/visual.html')
