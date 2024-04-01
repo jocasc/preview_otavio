@@ -1,5 +1,5 @@
 from django.urls import path
-from creativity.views import index, sobre, equipa, visual, publicacoes, etnograficas, textosdetalhados
+from creativity.views import index, sobre, equipa, visual, publicacoes, etnograficas, textosdetalhados, agenda
 
 urlpatterns = [
     path('', index, name='index'),
@@ -8,5 +8,6 @@ urlpatterns = [
     path('visual/', visual, name='visual'),
     path('publicacoes/', publicacoes, name='publicacoes'),
     path('etnograficas/', etnograficas, name='etnograficas'),
-    path('texto-detalhado/', textosdetalhados, name='textosdetalhados')
+    path('texto-detalhado/', textosdetalhados, name='textosdetalhados'),
+    path('agenda/', agenda, name='agenda')
 ]

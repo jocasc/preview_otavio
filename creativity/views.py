@@ -28,3 +28,7 @@ def etnograficas(request):
 
 def textosdetalhados(request):
     return render(request, 'creativity/textos_detalhes.html')
+
+
+def agenda(request):
+    return render(request, 'creativity/agenda.html')
