@@ -1,0 +1,309 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/article-equipa.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/dropdown-button.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">
+
+    <title>Equipa</title>
+</head>
+<body class="about-body">
+    <main>
+        <header class="header" id="mynav">
+
+            <nav class="header__navbar" style="z-index: 99;">                
+                
+                <a href="{% url 'index' %}"><img src="{% static 'assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <div class="header__navbar-content" id="navbarContent">
+                    
+                    <div class="header__navbar-content__links" id="teste">                        
+                        <a href="{% url 'sobre' %}">SOBRE</a>
+                        <a href="{% url 'equipa' %}">EQUIPA</a>
+                        <a href="visual.html">VISUAL</a>
+                        <!-- <a href="textos.html">TEXTOS</a> -->
+                        <div class="dropdown">
+                            <button class="dropbtn">TEXTOS</button>
+                            <div class="dropdown-content">
+                                <a href="textos_publicacoes.html">PUBLICAÇÕES</a>
+                                <a href="textos_notas_etnograficas.html">NOTAS ETNOGRÁFICAS</a>
+                            </div>
+                        </div>
+                        <a href="agenda.html">AGENDA</a>
+                        <a href="fazparte.html" id="faz-parte">FAZ PARTE!</a>
+                    </div>
+
+                    <div  class="header__navbar-content__translate" id="translate">                        
+                        <button id="portuguese" class="enable">PT</button>                     
+                        <span>|</span>
+                        <button id="english">EN</button>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="header__navbar__principal">
+                <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
+                <div class="header__icon-hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>    
+        </header>        
+    </main>        
+    <section>
+        <!-- <div class="animation"><h1>EQUIPA</h1></div> -->
+        <div class="azul">
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>
+            <h1>EQUIPA&nbsp;</h1>                                                   
+        </div>
+        <article>
+            <div class="team-names" id="team">
+                <p id="otavio">OTÁVIO RAPOSO</p>
+                <p id="ligia">LIGIA FERRO</p>
+                <p id="teresa">TERESA SEABRA</p>
+                <p id="alix">ALIX SARROUY</p>
+                <p id="carla">CARLA MALAFAIA</p>
+                <p id="jmartins">JOÃO MARTINS</p>
+                <p id="gabriela">GABRIELA LEAL</p>
+                <p id="jteixeira">JOÃO TEIXEIRA LOPES</p>
+                <p id="jordi">JORDI NOFRE</p>
+                <p id="pedro">PEDRO ABRANTES</p>
+                <p id="rita">RITA CACHADO</p>
+                <p id="ricardo">RICARDO CAMPOS</p>
+                <p id="pvarela">PEDRO VARELA</p>
+                <p id="liliana">LILIANA JOSÉ</p>
+                <p id="beatriz">BEATRIZ LACERDA</p>
+                <p id="mateus">MATEUS SADOCK</p>
+            </div>
+            <div class="team-card">
+                <div class="team-card__header">
+                    <img src="{% static 'assets/img/equipa.png' %}" alt="">
+                    <div>
+                        <p id="myname">GABRIELA LEAL</p>
+                        <p>papel na equipa</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="team-card__content">
+                        <p id="my-text">Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo reperfe ritias eiumet moditin pa est doloreped ut enimus quidellest ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo reperfe ritias eiumet moditin pa est doloreped ut enimus quidellest nonecus ditibusci dolorpo reperfe ritias eiumet moditin pa est doloreped ut enimus nonecus ditibusci dolorpo reperfe ritias eiumet moditin pa est doloreped ut enimus pa est doloreped ut enimus dolorpo.</p>
+                        <p>xipirito@gmail.com | www.xispirito.com</p>
+                    </div>
+                </div>
+            </div>            
+        </article>
+        <h2>GALERIA COLE<i>[A]</i>TIVIDADE</h2>
+        <img class="myimage" src="{% static 'assets/img/galeria.png' %}" alt="" >
+        
+        <!-- <article>              
+                <p>1Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma. Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re  laciis acerferum de sant voluptas et ma.</p>
+                <p>2Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.</p>                                                     
+                <p>3Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.</p>
+                <p>4Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.<br><span></span></p>                    
+                
+        </article> -->
+    </section>
+
+    <footer class="footer" id="footer" style="z-index: 1;">        
+        <div>
+            Logos Redes Sociais.
+        </div>        
+        <div>
+            <input type="text" placeholder="pesquisar...">    
+            <ul>
+                <li>SOBRE</li>
+                <li>VISUAL</li>
+                <li>TEXTOS</li>
+                <li>AGENDA</li>
+                <li>FAZ PARTE!</li>
+          </ul>
+        </div>        
+    </footer>
+ <script>
+    var team = document.getElementById('team')
+    var otavio = document.getElementById('otavio')
+    
+    otavio.addEventListener('mouseover', ()=> {
+        otavio.style.color = '#FECE00'
+        otavio.style.cursor = 'pointer'
+        myname.textContent = 'OTÁVIO RAPOSO'
+    })
+    otavio.addEventListener('mouseout', ()=> {
+        otavio.style.color = '#1e1e1e'
+        myname.textContent = 'OTÁVIO RAPOSO'
+    })
+
+    ligia.addEventListener('mouseover', ()=> {
+        ligia.style.color = '#FECE00'
+        ligia.style.cursor = 'pointer'
+        myname.textContent = 'LIGIA FERRO'
+    })
+    ligia.addEventListener('mouseout', ()=> {
+        ligia.style.color = '#1e1e1e'
+        myname.textContent = 'LIGIA FERRO'
+    })    
+
+    teresa.addEventListener('mouseover', ()=> {
+        teresa.style.color = '#FECE00'
+        teresa.style.cursor = 'pointer'
+        myname.textContent = 'TERESA SEABRA'
+    })
+    teresa.addEventListener('mouseout', ()=> {
+        teresa.style.color = '#1e1e1e'
+        myname.textContent = 'TERESA SEABRA'
+    })    
+    
+    alix.addEventListener('mouseover', ()=> {
+        alix.style.color = '#FECE00'
+        alix.style.cursor = 'pointer'
+        myname.textContent = 'ALIX SARROUY'
+    })
+    alix.addEventListener('mouseout', ()=> {
+        alix.style.color = '#1e1e1e'
+        myname.textContent = 'ALIX SARROUY'
+    })
+    
+    carla.addEventListener('mouseover', ()=> {
+        carla.style.color = '#FECE00'
+        carla.style.cursor = 'pointer'
+        myname.textContent = 'CARLA MALAFAIA'
+    })
+    carla.addEventListener('mouseout', ()=> {
+        carla.style.color = '#1e1e1e'
+        myname.textContent = 'CARLA MALAFAIA'
+    })
+    
+    jmartins.addEventListener('mouseover', ()=> {
+        jmartins.style.color = '#FECE00'
+        jmartins.style.cursor = 'pointer'
+        myname.textContent = 'JOÃO MARTINS'
+    })
+    jmartins.addEventListener('mouseout', ()=> {
+        jmartins.style.color = '#1e1e1e'
+        myname.textContent = 'JOÃO MARTINS'
+    })    
+
+    gabriela.addEventListener('mouseover', ()=> {
+        gabriela.style.color = '#FECE00'
+        gabriela.style.cursor = 'pointer'
+        myname.textContent = 'GABRIELA LEAL'
+    })
+    gabriela.addEventListener('mouseout', ()=> {
+        gabriela.style.color = '#1e1e1e'
+        myname.textContent = 'GABRIELA LEAL'
+    })  
+
+    jteixeira.addEventListener('mouseover', ()=> {
+        jteixeira.style.color = '#FECE00'
+        jteixeira.style.cursor = 'pointer'
+        myname.textContent = 'JOÃO TEIXEIRA LOPES'
+    })
+    jteixeira.addEventListener('mouseout', ()=> {
+        jteixeira.style.color = '#1e1e1e'
+        myname.textContent = 'JOÃO TEIXEIRA LOPES'
+    })  
+    
+    jordi.addEventListener('mouseover', ()=> {
+        jordi.style.color = '#FECE00'
+        jordi.style.cursor = 'pointer'
+        myname.textContent = jordi.textContent
+    })
+    jordi.addEventListener('mouseout', ()=> {
+        jordi.style.color = '#1e1e1e'
+        myname.textContent = jordi.textContent
+    })        
+
+    pedro.addEventListener('mouseover', ()=> {
+        pedro.style.color = '#FECE00'
+        pedro.style.cursor = 'pointer'
+        myname.textContent = pedro.textContent
+    })
+    pedro.addEventListener('mouseout', ()=> {
+        pedro.style.color = '#1e1e1e'
+        myname.textContent = pedro.textContent
+    })     
+    
+    pedro.addEventListener('mouseover', ()=> {
+        pedro.style.color = '#FECE00'
+        pedro.style.cursor = 'pointer'
+        myname.textContent = pedro.textContent
+    })
+    pedro.addEventListener('mouseout', ()=> {
+        pedro.style.color = '#1e1e1e'
+        myname.textContent = pedro.textContent
+    })   
+    
+    rita.addEventListener('mouseover', ()=> {
+        rita.style.color = '#FECE00'
+        rita.style.cursor = 'pointer'
+        myname.textContent = rita.textContent
+    })
+    rita.addEventListener('mouseout', ()=> {
+        rita.style.color = '#1e1e1e'
+        myname.textContent = rita.textContent
+    })  
+    
+    ricardo.addEventListener('mouseover', ()=> {
+        ricardo.style.color = '#FECE00'
+        ricardo.style.cursor = 'pointer'
+        myname.textContent = ricardo.textContent
+    })
+    ricardo.addEventListener('mouseout', ()=> {
+        ricardo.style.color = '#1e1e1e'
+        myname.textContent = ricardo.textContent
+    })     
+    
+    pvarela.addEventListener('mouseover', ()=> {
+        pvarela.style.color = '#FECE00'
+        pvarela.style.cursor = 'pointer'
+        myname.textContent = pvarela.textContent
+    })
+    pvarela.addEventListener('mouseout', ()=> {
+        pvarela.style.color = '#1e1e1e'
+        myname.textContent = pvarela.textContent
+    })  
+    
+    liliana.addEventListener('mouseover', ()=> {
+        liliana.style.color = '#FECE00'
+        liliana.style.cursor = 'pointer'
+        myname.textContent = liliana.textContent
+    })
+    liliana.addEventListener('mouseout', ()=> {
+        liliana.style.color = '#1e1e1e'
+        myname.textContent = liliana.textContent
+    })  
+    beatriz.addEventListener('mouseover', ()=> {
+        beatriz.style.color = '#FECE00'
+        beatriz.style.cursor = 'pointer'
+        myname.textContent = beatriz.textContent
+    })
+    beatriz.addEventListener('mouseout', ()=> {
+        beatriz.style.color = '#1e1e1e'
+        myname.textContent = beatriz.textContent
+    })   
+    mateus.addEventListener('mouseover', ()=> {
+        mateus.style.color = '#FECE00'
+        mateus.style.cursor = 'pointer'
+        myname.textContent = mateus.textContent
+    })
+    mateus.addEventListener('mouseout', ()=> {
+        mateus.style.color = '#1e1e1e'
+        myname.textContent = mateus.textContent
+    })                   
+ </script>       
+</body>
+</html>

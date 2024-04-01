@@ -8,3 +8,7 @@ def index(request):
 
 def sobre(request):
     return render(request, 'creativity/sobre.html')
+
+
+def equipa(request):
+    return render(request, 'creativity/equipa.html')
