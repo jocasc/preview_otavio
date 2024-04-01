@@ -16,3 +16,7 @@ def equipa(request):
 
 def visual(request):
     return render(request, 'creativity/visual.html')
+
+
+def publicacoes(request):
+    return render(request, 'creativity/textos_publicacoes.html')
