@@ -32,3 +32,7 @@ def textosdetalhados(request):
 
 def agenda(request):
     return render(request, 'creativity/agenda.html')
+
+
+def fazparte(request):
+    return render(request, 'creativity/fazparte.html')
