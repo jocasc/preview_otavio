@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog/css/reset.css">
-    <link rel="stylesheet" href="blog/css/header.css">
-    <link rel="stylesheet" href="blog/css/header-about.css">
-    <link rel="stylesheet" href="blog/css/styles.css">
-    <link rel="stylesheet" href="blog/css/footer.css">
-    <link rel="stylesheet" href="blog/css/article-about.css">
-    <link rel="stylesheet" href="blog/css/footer-about.css">
-    <link rel="stylesheet" href="blog/css/dropdown-button.css">
-    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/article-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer-about.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/dropdown-button.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css' %}">
 
     <title>Sobre</title>
 </head>
@@ -21,24 +21,25 @@
 
             <nav class="header__navbar" style="z-index: 99;">
 
-                <a href="index.html"><img src="blog/img/small-logo.png" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
                 <div class="header__navbar-content" id="navbarContent">
 
                     <div class="header__navbar-content__links" id="teste">
-                        <a href="sobre.html">SOBRE</a>
-                        <a href="equipa.html">EQUIPA</a>
-                        <a href="visual.html">VISUAL</a>
+                        <a href="{% url 'sobre' %}">SOBRE</a>
+                        <a href="{% url 'equipa' %}">EQUIPA</a>
+                        <a href="{% url 'visual' %}">VISUAL</a>
                         <!-- <a href="textos.html">TEXTOS</a> -->
                         <div class="dropdown">
                             <button class="dropbtn">TEXTOS</button>
                             <div class="dropdown-content">
-                                <a href="textos_publicacoes.html">PUBLICAÇÕES</a>
-                                <a href="textos_notas_etnograficas.html">NOTAS ETNOGRÁFICAS</a>
+                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
+                                <a href="{% url 'etnograficas' %}">NOTAS ETNOGRÁFICAS</a>
                             </div>
                         </div>
-                        <a href="agenda.html">AGENDA</a>
-                        <a href="fazparte.html" id="faz-parte">FAZ PARTE!</a>
+                        <a href="{% url 'agenda' %}">AGENDA</a>
+                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
                     </div>
+
                     <div  class="header__navbar-content__translate" id="translate">
                         <button id="portuguese" class="enable">PT</button>
                         <span>|</span>
@@ -95,9 +96,9 @@
         <div>
             <input type="text" placeholder="pesquisar...">
             <div class="icons">
-                <img src="blog/img/instagram_logo_preto.png" alt="">
-                <img src="blog/img/facebook_logo_preto.png" alt="">
-                <img src="blog/img/x_logo_preto.png" alt="">
+                <img src="{% static 'assets/img/instagram_logo_preto.png' %}" alt="">
+                <img src="{% static 'assets/img/facebook_logo_preto.png' %}" alt="">
+                <img src="{% static 'assets/img/x_logo_preto.png' %}" alt="">
             </ul>
         </div>
     </footer>
