@@ -1,51 +1,52 @@
-{% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/header-about.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/article-about.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/footer-about.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/dropdown-button.css' %}">
+    <link rel="stylesheet" href="blog/css/reset.css">
+    <link rel="stylesheet" href="blog/css/header.css">
+    <link rel="stylesheet" href="blog/css/header-about.css">
+    <link rel="stylesheet" href="blog/css/styles.css">
+    <link rel="stylesheet" href="blog/css/footer.css">
+    <link rel="stylesheet" href="blog/css/article-about.css">
+    <link rel="stylesheet" href="blog/css/footer-about.css">
+    <link rel="stylesheet" href="blog/css/dropdown-button.css">
     <link rel="stylesheet" href="https://use.typekit.net/qpj2ebe.css">
+
     <title>Sobre</title>
 </head>
 <body class="about-body">
     <main>
         <header class="header" id="mynav">
 
-            <nav class="header__navbar" style="z-index: 99;">                
-                
-                <a href="{% url 'index' %}"><img src="{% static 'assets/img/small-logo.png' %}" class="header__navbar-image" alt="xxx" id="loguinho"></a>
+            <nav class="header__navbar" style="z-index: 99;">
+
+                <a href="index.html"><img src="blog/img/small-logo.png" class="header__navbar-image" alt="xxx" id="loguinho"></a>
                 <div class="header__navbar-content" id="navbarContent">
-                    
-                    <div class="header__navbar-content__links" id="teste">                        
-                        <a href="{% url 'sobre' %}">SOBRE</a>
-                        <a href="{% url 'equipa' %}">EQUIPA</a>
-                        <a href="{% url 'visual' %}">VISUAL</a>
+
+                    <div class="header__navbar-content__links" id="teste">
+                        <a href="sobre.html">SOBRE</a>
+                        <a href="equipa.html">EQUIPA</a>
+                        <a href="visual.html">VISUAL</a>
                         <!-- <a href="textos.html">TEXTOS</a> -->
                         <div class="dropdown">
                             <button class="dropbtn">TEXTOS</button>
                             <div class="dropdown-content">
-                                <a href="{% url 'publicacoes' %}">PUBLICAÇÕES</a>
-                                <a href="{% url 'etnograficas' %}">NOTAS ETNOGRÁFICAS</a>
+                                <a href="textos_publicacoes.html">PUBLICAÇÕES</a>
+                                <a href="textos_notas_etnograficas.html">NOTAS ETNOGRÁFICAS</a>
                             </div>
                         </div>
-                        <a href="{% url 'agenda' %}">AGENDA</a>
-                        <a href="{% url 'fazparte' %}" id="faz-parte">FAZ PARTE!</a>
+                        <a href="agenda.html">AGENDA</a>
+                        <a href="fazparte.html" id="faz-parte">FAZ PARTE!</a>
                     </div>
-                    <div  class="header__navbar-content__translate" id="translate">                        
-                        <button id="portuguese" class="enable">PT</button>                     
+                    <div  class="header__navbar-content__translate" id="translate">
+                        <button id="portuguese" class="enable">PT</button>
                         <span>|</span>
                         <button id="english">EN</button>
                     </div>
                 </div>
             </nav>
-            
+
             <div class="header__navbar__principal">
                 <!-- <img src="blog/img/Logo_Horizontal_PretoFosco.png" id="main-image" class="header__navbar__principal-image" alt="trademark">                         -->
                 <div class="header__icon-hamburger" id="hamburger">
@@ -53,10 +54,10 @@
                     <div></div>
                     <div></div>
                 </div>
-            </div>    
-        </header>        
-    </main>  
-      
+            </div>
+        </header>
+    </main>
+
     <section>
         <div class="azul">
             <h1>SOBRE&nbsp;</h1>
@@ -68,32 +69,38 @@
             <h1>SOBRE&nbsp;</h1>
             <h1>SOBRE&nbsp;</h1>
             <h1>SOBRE&nbsp;</h1>
-                         
-            </div>
-        <article>              
-                <p>Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma elignatesent  exeriorrorum re cuptat laciis acerferum de sant voluptas et ma. Occaepremquas maios vollor asperorrum autaquas rectem con posam volorru ptassi con elignatesent  exeriorrorum re  laciis acerferum de sant voluptas et ma.</p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.</p>                                                     
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.</p>
-                <p>Ehent ut ut in plitaec aturere pedita della auda iur accuptat fugitiu mquosae ctenimin periatur, sum int que recto et fugit pa quiassim quis molorissi aut ratem doluptaspe venita con consequo eatis ipidunt faciende necatemolent omnis acerem santo moluptatur ra consedi quis alique porro ipiet volupti que nonecus ditibusci dolorpo.<br><span></span></p>                    
-                
+        </div>
+
+        <div class="titulo">
+            <h2>PERICREATIVITY.</h2>
+            <p>CRIATIVIDADES PERIFÉRICAS: JUVENTUDE, ARTE E POLÍTICAS PÚBLICAS EM TERRITÓRIOS SEGREGADOS</p>
+        </div>
+
+        <article>
+            <em>/CONTEXTO</em>
+                <p>Os jovens das periferias urbanas portuguesas têm sido frequentemente representados pelos media e pelas instituições políticas através de imagens de incivilidade, apatia e violência, com especial enfoque sobre as juventudes racializadas.  Apesar das consequências negativas destas representações, têm surgido novas agendas culturais juvenis que visam subverter estereótipos e afirmar identidades positivas. O poder dessas práticas criativas não é ignorado pelo Estado, que o mobiliza através de políticas públicas, como o “Programa Escolhas”.</p>
+                <em>/OBJETIVOS</em>
+                <p>PERICREATIVITY propõe-se a estudar os modos de produção criativa e artística destes jovens, em articulação com a análise das políticas públicas que visam estimular o desenvolvimento local, a participação-cidadã e a inclusão social.</p>
+                <em>/METODOLOGIA</em>
+                <p>PERICREATIVITY adota uma abordagem etnográfica multissituada em bairros segregados de Lisboa e Porto, com recurso a metodologias visuais e participativas. Em complemento, serão desenvolvidos workshops de co-criação comunitária para a produção de um trabalho coletivo e auto-reflexivo que possibilite aos participantes contribuírem ativamente para os resultados finais.</p>
+                <em>/OUTPUTS</em>
+                <p>PERICREATIVITY dará um importante contributo às políticas de juventude em Portugal e no mundo, trazendo impactos positivos para uma nova geração de políticas interseccionais, participativas e orientadas para o fortalecimento da emancipação social juvenil.<br><span></span></p>
         </article>
     </section>
 
-    <footer class="footer" id="footer" style="z-index: 1;">        
+    <footer class="footer" id="footer" style="z-index: 1;">
         <div>
-            Logos Redes Sociais.
-        </div>        
+            LOGO 1&nbsp;&nbsp;&nbsp;&nbsp;LOGO 2&nbsp;&nbsp;&nbsp;&nbsp;LOGO 3&nbsp;&nbsp;&nbsp;&nbsp;LOGO 4&nbsp;&nbsp;&nbsp;&nbsp;LOGO 5
+        </div>
         <div>
-            <input type="text" placeholder="pesquisar...">    
-            <ul>
-                <li>SOBRE</li>
-                <li>VISUAL</li>
-                <li>TEXTOS</li>
-                <li>AGENDA</li>
-                <li>FAZ PARTE!</li>
-          </ul>
-        </div>        
+            <input type="text" placeholder="pesquisar...">
+            <div class="icons">
+                <img src="blog/img/instagram_logo_preto.png" alt="">
+                <img src="blog/img/facebook_logo_preto.png" alt="">
+                <img src="blog/img/x_logo_preto.png" alt="">
+            </ul>
+        </div>
     </footer>
-        
+
 </body>
 </html>

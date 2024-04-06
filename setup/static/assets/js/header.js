@@ -4,6 +4,7 @@ var myarticle = document.getElementById('myarticle')
 var mymain = document.querySelector('main')
 
 var img = document.createElement('img')
+
 img.src = 'blog/img/small-logo.png'
 img.setAttribute('id', 'myimg')
 img.style.left = 0
@@ -18,23 +19,23 @@ window.addEventListener('scroll', () => {
         mainImage.style.paddingTop = '170px'
     } else {
         myNav.classList.remove('appear')
-        mainImage.style.paddingTop = '100px'        
-        myNav.style.top = 70
+        mainImage.style.paddingTop = '100px'
+        myNav.style.top = 0
     }
 
     if (myarticle.getBoundingClientRect().top <= 0) {
-        burger.style.backgroundColor = '#1e1e1e'                    
-        burger.style.position = 'sticky'        
+        burger.style.backgroundColor = '#1e1e1e'
+        burger.style.position = 'sticky'
         burger.style.top = 0
-        
+
         img.style.filter = 'invert(81%) sepia(41%) saturate(3050%) hue-rotate(1deg) brightness(106%) contrast(102%)'
         img.style.visibility = 'visible'
 
         for (let i = 0; i < burgerIcon.children.length; i++) {
             burgerIcon.children[i].style.backgroundColor = '#FECE00'
         }
-        
-    } else {        
+
+    } else {
         // burger.style.position = 'block'
         burger.style.backgroundColor = '#FECE00'
         menuMobile.style.backgroundColor = '#1e1e1e'
@@ -43,10 +44,10 @@ window.addEventListener('scroll', () => {
         }
         img.style.filter = 'invert(6%) sepia(18%) saturate(71%) hue-rotate(323deg) brightness(81%) contrast(85%)'
         img.style.visibility = 'hidden'
-        
+
     }
 
-    
+
 })
 
 
@@ -88,14 +89,14 @@ for (var i=0; i<textOptions.length; i++) {
         option.setAttribute('id', 'closebtn')
     }
     option.innerText = textOptions[i]
-    menuMobile.appendChild(option)    
+    menuMobile.appendChild(option)
 }
 menuMobile.setAttribute('class', 'modal')
 mymain.insertBefore(menuMobile, mymain.children[2])
 
 
 /* mostrar menu em fullscreen */
-burger.addEventListener('click', () => {    
+burger.addEventListener('click', () => {
     menuMobile.classList.add('side-animation')
     menuMobile.style.height = '100%'
     document.body.style.overflow = 'hidden'

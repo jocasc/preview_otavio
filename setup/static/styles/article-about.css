@@ -1,9 +1,7 @@
 .azul {
-    /* background-color: blue; */
     height: 25vh;
     width: 100vw;
     font-size: 50px;
-    /* color: white;    */
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
@@ -12,7 +10,6 @@
   h1 {
     font-size: 130px;
     text-transform: uppercase;
-    /* letter-spacing: px; */
     animation: move-rtl 6000ms linear infinite;
   }
 
@@ -23,13 +20,12 @@
     100% {
         transform: translateX(-100%)
     }
-  }  
+  }
 
 emm {
     font-family: var(--font-title-anisette);
     font-weight: 400;
-    font-style: normal;  
-    /* background-color: brown;       */
+    font-style: normal;
     font-size: 1.2rem;
     margin-top: 0px;
     margin-bottom:0px;
@@ -39,12 +35,12 @@ emm {
 em {
     font-family: var(--font-title-anisette);
     font-weight: 700;
-    font-style: normal; 
-    /* background-color: green;   */
-    font-size: 1.5rem;      
-    margin-top: 0px;
-    margin-bottom: 0px;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin-top: 70px;
+    margin-bottom: 20px;
     line-height: 0;
+    margin-left: 10vw;
 }
 
 legenda {
@@ -63,43 +59,52 @@ section h1 {
 }
 
 article {
-    /* background-color: green;  */
-    display: flex;           
-    justify-content: center;    
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.titulo {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 30px;
+}
+
+.titulo h2 {
+    font-family: var(--font-title-anisette);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    line-height: 1.5;
+}
+
+.titulo p {
+    font-family: var(--font-title-anisette);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 article p {
-    width: 30vw;    
-    /* background-color: green; */
+    width: 80vw;
     font-family: var(--font-text-adelle);
     font-weight: 300;
     font-style: normal;
-    line-height: 2;  
-    padding-left: 45px;
-    padding-right: 45px;    
+    line-height: 2;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    justify-content: center;
 }
 
-article p:nth-child(1) {
-    font-family: var(--font-text-adelle-regular);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.1rem;
-}
-
-
-article p:nth-child(3) {
-    /* background-color: brown; */
-    padding-top: 70px;
-}
 
 article span {
     position: absolute;
     background-color: var(--yellow-color);
     height: 20px;
     width: 20px;
-    right: 250px;
+    margin-top: 100px;
+    right: 150px;
 }
 
 
