@@ -75,7 +75,6 @@
     .footer div:nth-child(1){
       color:green;
       visibility: hidden;
-      /* display: none; */
     }
 
   }
