@@ -4,7 +4,7 @@ var myarticle = document.getElementById('myarticle')
 var mymain = document.querySelector('main')
 
 var img = document.createElement('img')
-
+console.log('oi')
 img.src = 'blog/img/small-logo.png'
 img.setAttribute('id', 'myimg')
 img.style.left = 0
@@ -13,15 +13,15 @@ img.style.height = '35px'
 img.style.visibility = 'hidden'
 
 window.addEventListener('scroll', () => {
-    console.log(mainImage.getBoundingClientRect().top)
-    if ((mainImage.getBoundingClientRect().top <= -30) && (window.innerWidth > 500))  {
-        myNav.classList.add('appear')
-        mainImage.style.paddingTop = '170px'
-    } else {
-        myNav.classList.remove('appear')
-        mainImage.style.paddingTop = '100px'
-        myNav.style.top = 0
-    }
+
+//    if ((mainImage.getBoundingClientRect().top <= -30) && (window.innerWidth > 500))  {
+//        myNav.classList.add('appear')
+//        mainImage.style.paddingTop = '170px'
+//    } else {
+//        myNav.classList.remove('appear')
+//        mainImage.style.paddingTop = '100px'
+//        myNav.style.top = 0
+//    }
 
     if (myarticle.getBoundingClientRect().top <= 0) {
         burger.style.backgroundColor = '#1e1e1e'
